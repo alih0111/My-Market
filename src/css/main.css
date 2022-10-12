@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.card:hover svg {
+  width: 22px;
+}
+
+#cta .arrow {
+  left: 30%;
+}
+.arrow {
+  position: absolute;
+  bottom: 0;
+  margin-left: 0px;
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  top: 15px;
+}
+.segunda {
+  margin-left: 8px;
+}
+.next {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+    -webkit-transform: translateX(0px) scale(1);
+    -moz-transform: translateX(0px) scale(1);
+    -ms-transform: translateX(0px) scale(1);
+    -o-transform: translateX(0px) scale(1);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(10px) scale(0.9);
+  }
+  26% {
+    opacity: 0;
+    transform: translateX(-10px) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+.card:hover .arrow {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.card:hover .arrow.primera {
+  animation-name: bounceAlpha;
+  animation-duration: 1.4s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+/* //////////////////////////////////////////////////// */
+
+.my-rounded {
+  background: url("/public/assets/img/anime-img.webp");
+  background-position: top -10px center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  width: 500px;
+  height: 500px;
+  float: left;
+  border: 7px solid #ffffff50;
+  border-radius: 60% 40% 30% 70% / 60% 30% 30% 40%;
+  -webkit-border-radius: 60% 40% 30% 70% / 60% 30% 30% 40%;
+  -moz-border-radius: 60% 40% 30% 70% / 60% 30% 30% 40%;
+  -ms-border-radius: 60% 40% 30% 70% / 60% 30% 30% 40%;
+  -o-border-radius: 60% 40% 30% 70% / 60% 30% 30% 40%;
+  animation: morph 8s ease-in-out infinite;
+  -webkit-animation: morph 8s ease-in-out infinite;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -webkit-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -moz-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -ms-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -o-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -webkit-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -moz-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -ms-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    -o-border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -webkit-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -moz-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -ms-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    -o-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}

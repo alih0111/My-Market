@@ -1,43 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    /> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>  -->
+    <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <link rel="stylesheet" href="./build/tailwind.css" />
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <body class="bg-slate-10">
+    <!--  NavBar -->
+    <div class="mt-3 py-3 mx-auto max-w-7xl flex justify-between items-center">
+      <span> search </span>
+      <div
+        class="cursor-pointer text-4xl flex flex-col items-center border border-slate-400 rounded-sm py-4 px-5 relative"
+      >
+        <p>
+          MAKE <span class="font-bold">YOUR</span> HOUSE A
+          <span class="font-bold">HOME</span>
+        </p>
+        <img
+          src="./assets/img/temp.PNG"
+          class="absolute mt-12 w-[100%]"
+          alt=""
+        />
+      </div>
+      <div>
+        <span>basket</span>
+        <span>profile</span>
+      </div>
+    </div>
+    <ul class="flex gap-10 justify-center mt-8">
+      <li class="text-slate-400">New</li>
+      <li class="text-slate-400 flex items-center">
+        <span class="px-2">Brands</span>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="w-3 h-3"
+          viewBox="0 0 10 6"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </li>
+      <li class="text-slate-400 flex items-center">
+        <span class="px-2">Furniture</span>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="w-3 h-3"
+          viewBox="0 0 10 6"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </li>
+      <li class="text-slate-400">Rugs</li>
+      <li class="text-slate-400 flex items-center">
+        <span class="px-2">Decorator</span>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="w-3 h-3"
+          viewBox="0 0 10 6"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </li>
+      <li class="text-slate-400">Couture Fore Living</li>
+      <li class="text-slate-400 flex items-center">
+        <span class="px-2">Testimonials</span>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          role="presentation"
+          class="w-3 h-3"
+          viewBox="0 0 10 6"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </li>
+    </ul>
+    <!-- 1 Carosule -->
+    <div class="mt-12">
+      <div
+        id="carouselDarkVariant"
+        class="carousel slide carousel-fade carousel-dark relative"
+        data-bs-ride="carousel"
+      >
+        <!-- Indicators -->
+        <div
+          class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+        >
+          <button
+            data-bs-target="#carouselDarkVariant"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            data-bs-target="#carouselDarkVariant"
+            data-bs-slide-to="1"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            data-bs-target="#carouselDarkVariant"
+            data-bs-slide-to="2"
+            aria-label="Slide 1"
+          ></button>
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <!-- Inner -->
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <!-- Single item -->
+          <div class="carousel-item active relative float-left w-full">
+            <img
+              src="./assets/img/1-1-carousel.webp"
+              class="block w-full h-[700px] object-cover"
+              alt="Motorbike Smoke"
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <div class="carousel-item relative float-left w-full">
+            <img
+              src="./assets/img/1-2-carousel.webp"
+              class="block w-full h-[700px] object-cover"
+              alt="Mountaintop"
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+
+          <!-- Single item -->
+          <!-- <div class="carousel-item relative float-left w-full">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
+              class="block w-full"
+              alt="Woman Reading a Book"
+            />
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div> -->
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls -->
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselDarkVariant"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselDarkVariant"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon inline-block bg-no-repeat"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Cards -->
+    <div class="mt-20 max-w-7xl mx-auto">
+      <p class="text-5xl">Our Curated Collections</p>
+      <div
+        class="mt-10 mx-auto xl:gap-10 sm:gap-5 grid xl:grid-cols-3 sm:grid-cols-2"
+      >
+        <div
+          class="rounded overflow-hidden mx-auto shadow-md mb-3 h-auto max-w-[600px] card cursor-pointer"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="./assets/img/1-img.jpg"
+              class="transition ease-in-out duration-700"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-center">
+            <button class="p-2 m-3 rounded text-lg">IMG Comfort</button>
+            <div class="relative">
+              <div
+                class="round absolute w-10 h-10 bg-stone-400 border rounded-full mt-2"
+              >
+                <div id="cta">
+                  <span class="arrow primera next"></span>
+                  <span class="arrow segunda next"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded overflow-hidden mx-auto shadow-md mb-3 h-auto max-w-[600px] card cursor-pointer"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="./assets/img/2-card.webp"
+              class="transition ease-in-out duration-700"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-center">
+            <button class="p-2 m-3 rounded">IMG Comfort</button>
+            <div class="relative">
+              <div
+                class="round absolute w-10 h-10 bg-stone-400 border rounded-full mt-2"
+              >
+                <div id="cta">
+                  <span class="arrow primera next"></span>
+                  <span class="arrow segunda next"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rounded overflow-hidden mx-auto shadow-md mb-3 h-auto max-w-[600px] card cursor-pointer"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="./assets/img/2-card.webp"
+              class="transition ease-in-out duration-700"
+              alt=""
+            />
+          </div>
+          <div class="flex justify-center">
+            <button class="p-2 m-3 rounded">IMG Comfort</button>
+            <div class="relative">
+              <div
+                class="round absolute w-10 h-10 bg-stone-400 border rounded-full mt-2"
+              >
+                <div id="cta">
+                  <span class="arrow primera next"></span>
+                  <span class="arrow segunda next"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- After Cards Finde More -->
+    <div class="grid sm:grid-cols-2 items-center max-w-7xl mx-auto">
+      <div
+        class="flex flex-col justify-center text-center max-w-3xl mx-auto items-center"
+      >
+        <p class="text-5xl">Couture For Living</p>
+        <p class="mt-7 text-sm">
+          A Furniture Package bundled with our Interior Design Service. You
+          commit to spending a minimum of $5000 with us, and we will help you
+          purchase the right furniture. Our advice is complimentary and provided
+          by your furniture expert and experienced Interior Designer. You will
+          also receive very generous trade discounts on all your purchases
+        </p>
+        <button
+          class="absolute mt-80 shadow-sm border transition-all border-slate-500 text-sm rounded-sm hover:border-2 px-8 py-3 max-w-sm"
+        >
+          Find Out More
+        </button>
+      </div>
+      <div class="mt-20 flex justify-center">
+        <div class="my-rounded overflow-hidden"></div>
+      </div>
+    </div>
+    <div class="h-40"></div>
+    <div class="col-xs-12 col-s-12 col-md-6 col-l-6 col-xl-6">
+      <div class="faq-left-side">
+        <div class="tabs">
+          <div class="tab">
+            <input type="checkbox" id="check1" />
+            <label class="tab-lable" for="check1"
+              >ایا این دوره برای من مفید است؟</label
+            >
+            <div class="tab-content">
+              پشتیبانی 24 ساعته پشتیبانی 24 ساعته در تمام ایام هفته به صورت
+              رایگان پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی
+              24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24 ساعته در
+              تمام ایام هفته به صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته
+              به صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان
+              پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24
+              ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24 ساعته در تمام
+              ایام هفته به صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته به
+              صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان
+              پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24
+              ساعته در تمام ایام هفته به صورت رایگان در تمام ایام هفته به صورت
+              رایگان
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
