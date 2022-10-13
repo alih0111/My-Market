@@ -5,132 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    /> -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    /> -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
-    /> -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>  -->
     <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <link rel="stylesheet" href="./build/tailwind.css" />
 
-  <body class="bg-slate-10">
+  <body class=" ">
     <!--  NavBar -->
-    <div class="mt-3 py-3 mx-auto max-w-7xl flex justify-between items-center">
-      <span> search </span>
+    <nav
+      class="nav sticky bg-white z-10 top-0 pt-5 pb-10 transition-all duration-700 ease-in-out"
+    >
       <div
-        class="cursor-pointer text-4xl flex flex-col items-center border border-slate-400 rounded-sm py-4 px-5 relative"
+        class="top-0 py-3 mx-auto max-w-7xl flex justify-between items-center"
       >
-        <p>
-          MAKE <span class="font-bold">YOUR</span> HOUSE A
-          <span class="font-bold">HOME</span>
-        </p>
-        <img
-          src="./assets/img/temp.PNG"
-          class="absolute mt-12 w-[100%]"
-          alt=""
-        />
+        <span> search </span>
+        <div
+          class="cursor-pointer text-4xl flex flex-col items-center border border-slate-400 rounded-sm py-4 px-5 relative"
+        >
+          <p>
+            MAKE <span class="font-bold">YOUR</span> HOUSE A
+            <span class="font-bold">HOME</span>
+          </p>
+          <img
+            src="./assets/img/temp.PNG"
+            class="absolute mt-12 w-[100%]"
+            alt=""
+          />
+        </div>
+        <div>
+          <span>basket</span>
+          <span>profile</span>
+        </div>
       </div>
-      <div>
-        <span>basket</span>
-        <span>profile</span>
-      </div>
-    </div>
-    <ul class="flex gap-10 justify-center mt-8">
-      <li class="text-slate-400">New</li>
-      <li class="text-slate-400 flex items-center">
-        <span class="px-2">Brands</span>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          role="presentation"
-          class="w-3 h-3"
-          viewBox="0 0 10 6"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </li>
-      <li class="text-slate-400 flex items-center">
-        <span class="px-2">Furniture</span>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          role="presentation"
-          class="w-3 h-3"
-          viewBox="0 0 10 6"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </li>
-      <li class="text-slate-400">Rugs</li>
-      <li class="text-slate-400 flex items-center">
-        <span class="px-2">Decorator</span>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          role="presentation"
-          class="w-3 h-3"
-          viewBox="0 0 10 6"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </li>
-      <li class="text-slate-400">Couture Fore Living</li>
-      <li class="text-slate-400 flex items-center">
-        <span class="px-2">Testimonials</span>
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          role="presentation"
-          class="w-3 h-3"
-          viewBox="0 0 10 6"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </li>
-    </ul>
+      <ul class="flex gap-10 justify-center mt-8">
+        <li class="text-slate-400">New</li>
+        <li class="text-slate-400 flex items-center">
+          <span class="px-2">Brands</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="w-3 h-3"
+            viewBox="0 0 10 6"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </li>
+        <li class="text-slate-400 flex items-center">
+          <span class="px-2">Furniture</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="w-3 h-3"
+            viewBox="0 0 10 6"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </li>
+        <li class="text-slate-400">Rugs</li>
+        <li class="text-slate-400 flex items-center">
+          <span class="px-2">Decorator</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="w-3 h-3"
+            viewBox="0 0 10 6"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </li>
+        <li class="text-slate-400">Couture Fore Living</li>
+        <li class="text-slate-400 flex items-center">
+          <span class="px-2">Testimonials</span>
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="w-3 h-3"
+            viewBox="0 0 10 6"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </li>
+      </ul>
+    </nav>
     <!-- 1 Carosule -->
-    <div class="mt-12">
+    <div class="mt-15">
       <div
         id="carouselDarkVariant"
         class="carousel slide carousel-fade carousel-dark relative"
@@ -315,7 +306,7 @@
         </div>
       </div>
     </div>
-    <!-- After Cards Finde More -->
+    <!-- animation photo & describe -->
     <div class="grid sm:grid-cols-2 items-center max-w-7xl mx-auto">
       <div
         class="flex flex-col justify-center text-center max-w-3xl mx-auto items-center"
@@ -338,32 +329,994 @@
         <div class="my-rounded overflow-hidden"></div>
       </div>
     </div>
+
     <div class="h-40"></div>
-    <div class="col-xs-12 col-s-12 col-md-6 col-l-6 col-xl-6">
-      <div class="faq-left-side">
-        <div class="tabs">
-          <div class="tab">
-            <input type="checkbox" id="check1" />
-            <label class="tab-lable" for="check1"
-              >ایا این دوره برای من مفید است؟</label
+    <!-- Acardeon menu -->
+    <div class="acardeon-back items-center flex">
+      <div class="acardeon-section grid md:grid-cols-2 mx-auto max-w-7xl">
+        <div class="flex items-center pr-5">
+          <video class="" width="" height="" controls>
+            <source
+              src="../public/assets/video/video-production.mp4"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="flex flex-col text-cyan-50">
+          <p class="ml-3 text-4xl">Everything is designed.</p>
+          <p class="ml-3 mt-2 text-slate-500 text-4xl">
+            Few things are designed well.
+          </p>
+          <p class="ml-3 mt-5 mb-5">
+            Standards compliant whereas web-enabled tools for. Drive
+            clicks-and-mortar catalysts for change before vertical architectures
+            of modernism for society.
+          </p>
+          <button class="group">
+            <div
+              class="flex items-center justify-between h-12 px-3 font-semibold hover:shadow-md"
             >
-            <div class="tab-content">
-              پشتیبانی 24 ساعته پشتیبانی 24 ساعته در تمام ایام هفته به صورت
-              رایگان پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی
-              24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24 ساعته در
-              تمام ایام هفته به صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته
-              به صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان
-              پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24
-              ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24 ساعته در تمام
-              ایام هفته به صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته به
-              صورت رایگان پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان
-              پشتیبانی 24 ساعته در تمام ایام هفته به صورت رایگان پشتیبانی 24
-              ساعته در تمام ایام هفته به صورت رایگان در تمام ایام هفته به صورت
-              رایگان
+              <span class="truncate">01. Research</span>
+              <svg
+                class="h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40"
+            >
+              <p class="mt-2 ml-4 mr-2 text-left">
+                We believe that architecture should be integral with its place
+                and that the best buildings allow people to fully experience the
+                light and nature
+              </p>
+            </div>
+          </button>
+          <button class="group">
+            <div
+              class="flex items-center justify-between h-12 px-3 font-semibold hover:shadow-md"
+            >
+              <span class="truncate">02. Concept</span>
+              <svg
+                class="h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40"
+            >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item A</a
+              >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item B</a
+              >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item C</a
+              >
+            </div>
+          </button>
+          <button class="group">
+            <div
+              class="flex items-center justify-between h-12 px-3 font-semibold hover:shadow-md"
+            >
+              <span class="truncate">03. Aplication</span>
+              <svg
+                class="h-4 w-4 flex-shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40"
+            >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item A</a
+              >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item B</a
+              >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item C</a
+              >
+            </div>
+          </button>
+          <button class="group">
+            <div
+              class="flex items-center justify-between h-12 px-3 font-semibold hover:shadow-md"
+            >
+              <span class="truncate">03. Analisys</span>
+              <svg
+                class="h-4 w-4 flex-shrink-0"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <div
+              class="max-h-0 overflow-hidden duration-300 group-focus:max-h-40"
+            >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item A</a
+              >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item B</a
+              >
+              <a
+                class="flex items-center h-8 px-4 text-sm hover:bg-gray-200"
+                href="#"
+                >Item C</a
+              >
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="h-20"></div>
+
+    <!-- Carousel -->
+    <!-- <section>
+      <div class="flex">
+        <div class="carousel-arrows-p w-2/12 flex items-center justify-center">
+          <div class="w-full text-right">
+            <button
+              onclick="prev()"
+              class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mr-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="sliderContainer" class="w-10/12 overflow-hidden">
+          <ul id="slider" class="flex w-full items-center justify-center">
+            <li class="w-96 p-5 carousel-li">
+              <div class="border rounded-lg p-5 h-full">
+                <img
+                  class="h-50 w-full object-cover rounded-md"
+                  src="./assets/img/1-card.webp"
+                  alt=""
+                />
+                <h2 class="mt-2 text-2xl font-bold text-gray-700">
+                  Some Big Heading.
+                </h2>
+                <p class="mt-2 text-gray-500">
+                  lor eml ore mlo remloremlo remloremlore mloremloremlor
+                  emloremlorem
+                </p>
+                <button
+                  class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold"
+                >
+                  Read More
+                </button>
+              </div>
+            </li>
+            <li class="w-96 p-5 carousel-li">
+              <div class="border rounded-lg p-5">
+                <img
+                  class="h-50 w-full object-cover rounded-md"
+                  src="./assets/img/1-card.webp"
+                  alt=""
+                />
+                <h2 class="mt-2 text-2xl font-bold text-gray-700">
+                  Some Big Heading.
+                </h2>
+                <p class="mt-2 text-gray-500">
+                  lor eml ore mlo remloremlo remloremlore mloremloremlor
+                  emloremlorem
+                </p>
+                <button
+                  class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold"
+                >
+                  Read More
+                </button>
+              </div>
+            </li>
+            <li class="w-96 p-5 carousel-li">
+              <div class="border rounded-lg p-5">
+                <img
+                  class="h-50 w-full object-cover rounded-md"
+                  src="./assets/img/1-card.webp"
+                  alt=""
+                />
+                <h2 class="mt-2 text-2xl font-bold text-gray-700">
+                  Some Big Heading.
+                </h2>
+                <p class="mt-2 text-gray-500">
+                  lor eml ore mlo remloremlo remloremlore mloremloremlor
+                  emloremlorem
+                </p>
+                <button
+                  class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold"
+                >
+                  Read More
+                </button>
+              </div>
+            </li>
+            <li class="w-96 p-5 carousel-li">
+              <div class="border rounded-lg p-5">
+                <img
+                  class="h-50 w-full object-cover rounded-md"
+                  src="./assets/img/1-card.webp"
+                  alt=""
+                />
+                <h2 class="mt-2 text-2xl font-bold text-gray-700">
+                  Some Big Heading.
+                </h2>
+                <p class="mt-2 text-gray-500">
+                  lor eml ore mlo remloremlo remloremlore mloremloremlor
+                  emloremlorem
+                </p>
+                <button
+                  class="mt-4 px-6 py-3 rounded-md bg-green-600 text-white font-bold"
+                >
+                  Read More
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="carousel-arrows-n w-2/12 flex items-center">
+          <div class="w-full">
+            <button
+              onclick="next()"
+              class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Component End  -->
+    <!-- <div class="h-40"></div> -->
+
+    <!-- Top Selers -->
+    <div class="2xl:container 2xl:mx-auto">
+      <div class="lg:px-20 md:px-6 px-4 md:py-12 py-8">
+        <div>
+          <h1
+            class="text-3xl lg:text-4xl font-semibold text-gray-800 text-center"
+          >
+            Top Selling
+          </h1>
+        </div>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-8 md:mt-10"
+        >
+          <div class="bg-gray-50 p-8">
+            <div class="">
+              <h2 class="text-xl text-gray-600">Lounge Chair</h2>
+              <p class="text-xl font-semibold text-gray-800 mt-2">$1200</p>
+            </div>
+            <div class="flex justify-center items-center mt-8 md:mt-24">
+              <img
+                class=""
+                src="https://i.ibb.co/8403ZFZ/pexels-hormel-2762247-removebg-preview-2-1.png"
+                alt="A chair with designed back"
+                role="img"
+              />
+            </div>
+            <div class="flex justify-end items-center space-x-2 mt-16 md:mt-32">
+              <button
+                aria-label="show in red color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-red-600 border rounded-full border-gray-500"
+                ></div>
+              </button>
+              <button
+                aria-label="show in white color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-white border rounded-full border-gray-500"
+                ></div>
+              </button>
+              <button
+                aria-label="show in black color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-gray-900 border rounded-full border-gray-500"
+                ></div>
+              </button>
+            </div>
+          </div>
+          <div class="bg-gray-50 p-8">
+            <div class="">
+              <h2 class="text-xl text-gray-600">Lounge Chair</h2>
+              <p class="text-xl font-semibold text-gray-800 mt-2">$1200</p>
+            </div>
+            <div class="flex justify-center items-center mt-8 md:mt-24">
+              <img
+                class=""
+                src="https://i.ibb.co/WBdnRqb/eugene-chystiakov-3ne-Swyntb-Q8-unsplash-1-removebg-preview-2-1.png"
+                alt="A chair with wooden legs"
+                role="img"
+              />
+            </div>
+            <div class="flex justify-end items-center space-x-2 mt-8 md:mt-32">
+              <button
+                aria-label="show in white color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-white border rounded-full border-gray-500"
+                ></div>
+              </button>
+              <button
+                aria-label="show in black color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-gray-900 border rounded-full border-gray-500"
+                ></div>
+              </button>
+            </div>
+          </div>
+          <div class="bg-gray-50 p-8">
+            <div class="">
+              <h2 class="text-xl text-gray-600">Lounge Chair</h2>
+              <p class="text-xl font-semibold text-gray-800 mt-2">$1200</p>
+            </div>
+            <div class="flex justify-center items-center mt-8 md:mt-24">
+              <img
+                class=""
+                src="https://i.ibb.co/R2fbCvj/kari-shea-It-Mgg-D0-Egu-Y-unsplash-removebg-preview-2-1.png"
+                alt="A sofa chair with wooden legs"
+                role="img"
+              />
+            </div>
+            <div class="flex justify-end items-center space-x-2 mt-16 md:mt-32">
+              <button
+                aria-label="show in green color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-green-700 border rounded-full border-gray-500"
+                ></div>
+              </button>
+              <button
+                aria-label="show in brown color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-yellow-800 border rounded-full border-gray-500"
+                ></div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 lg:gap-8 mt-4 md:mt-6 lg:mt-8"
+        >
+          <div class="bg-gray-50 p-8">
+            <div>
+              <h2 class="text-xl leading-tight text-gray-600">
+                Sectional Sofa
+              </h2>
+              <p class="text-xl font-semibold text-gray-800 mt-2">$78900</p>
+            </div>
+            <div class="flex justify-center items-center mt-28 md:mt-3">
+              <img
+                src="https://i.ibb.co/CPdBFwZ/pexels-pixabay-276583-removebg-preview-1-1.png"
+                alt="A large sectional sofa"
+                role="img"
+              />
+            </div>
+            <div class="flex justify-end items-center space-x-2 mt-36 md:mt-12">
+              <button
+                aria-label="show in yellow color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-yellow-500 border rounded-full border-gray-500"
+                ></div>
+              </button>
+              <button
+                aria-label="show in light gray color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-gray-400 border rounded-full border-gray-500"
+                ></div>
+              </button>
+            </div>
+          </div>
+          <div class="bg-gray-50 p-8">
+            <div>
+              <h2 class="text-xl leading-tight text-gray-600">
+                Two Seater Sofa
+              </h2>
+              <p class="text-xl font-semibold text-gray-800 mt-2">$2900</p>
+            </div>
+            <div class="flex justify-center items-center mt-28 md:mt-1">
+              <img
+                src="https://i.ibb.co/238nZzf/pexels-andrea-piacquadio-3757055-removebg-preview-1-1.png"
+                alt="A beautiful two seater sofa"
+                role="img"
+              />
+            </div>
+            <div class="flex justify-end items-center space-x-2 mt-36 md:mt-12">
+              <button
+                aria-label="show in black color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-gray-900 border rounded-full border-gray-500"
+                ></div>
+              </button>
+              <button
+                aria-label="show in green color"
+                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+              >
+                <div
+                  class="w-2.5 h-2.5 bg-green-700 border rounded-full border-gray-500"
+                ></div>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="h-28"></div>
+
+    <!-- 2-Carousel -->
+    <section>
+      <div class="lg:px-20 md:px-6 px-4 md:py-12 py-8">
+        <!-- <h1 class="text-3xl lg:text-4xl font-semibold text-gray-800 text-left">
+          Categories
+        </h1> -->
+      
+      <div
+        class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4"
+      >
+        <div class="w-full relative flex items-center justify-center mx-auto">
+          <button
+            aria-label="slide backward"
+            class="swiper-button-prev1 absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+            id="prev1"
+          >
+            <svg
+              class="dark:text-gray-900"
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 1L1 7L7 13"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div
+            class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden mySwiper1"
+          >
+            <div
+              id="slider2"
+              class="swiper-wrapper h-full flex items-center transition ease-in-out duration-700 justify-start mx-auto"
+            >
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/fDngH9G/carosel-1.png"
+                  alt="black chair and white table"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 1
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/tCfVky2/carosel-3.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/rFsGfr5/carosel-4.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/fDngH9G/carosel-3.png"
+                  alt="black chair and white table"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/DWrGxX6/carosel-8.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/tCfVky2/carosel-3.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/rFsGfr5/carosel-4.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/fDngH9G/carosel-1.png"
+                  alt="black chair and white table"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/tCfVky2/carosel-3.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-slide flex flex-shrink-0 relative px-5 max-w-sm"
+              >
+                <img
+                  src="https://i.ibb.co/rFsGfr5/carosel-4.png"
+                  alt="sitting area"
+                  class="object-cover object-center w-full"
+                />
+                <div class="absolute w-full h-full p-6">
+                  <h2
+                    class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"
+                  >
+                    Catalog 2
+                  </h2>
+                  <div class="flex h-full items-end pb-6">
+                    <h3
+                      class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"
+                    >
+                      Minimal Interior
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="slide forward"
+            class="swiper-button-next1 absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+            id="next1"
+          >
+            <svg
+              class="dark:text-gray-900"
+              width="8"
+              height="14"
+              viewBox="0 0 8 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L7 7L1 13"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <div class="h-40"></div>
+
+    <div class="h-40"></div>
+    <!-- NavBar Script -->
+    <script>
+      const nav = document.querySelector(".nav");
+      let lastScrollY = window.scrollY;
+
+      window.addEventListener("scroll", () => {
+        if (lastScrollY < window.scrollY && window.scrollY > 200) {
+          nav.classList.add("nav-hidden");
+        } else {
+          nav.classList.remove("nav-hidden");
+        }
+        lastScrollY = window.scrollY;
+      });
+    </script>
+
+    <!-- Carousel Script -->
+    <!-- <script>
+      let sliderContainer = document.getElementById("sliderContainer");
+      let slider = document.getElementById("slider");
+      let cards = document.querySelectorAll(".carousel-li");
+      let p_arrow = document.querySelector(".carousel-arrows-p");
+      let n_arrow = document.querySelector(".carousel-arrows-n");
+
+      let elementsToShow = 3;
+      if (document.body.clientWidth < 1000) {
+        elementsToShow = 1;
+        p_arrow.classList.add("hidden");
+        n_arrow.classList.add("hidden");
+        sliderContainer.classList.remove("w-10/12");
+      } else if (document.body.clientWidth < 1500) {
+        elementsToShow = 2;
+        p_arrow.classList.add("hidden");
+        n_arrow.classList.add("hidden");
+        sliderContainer.classList.remove("w-10/12");
+      } else {
+        p_arrow.classList.remove("hidden");
+        n_arrow.classList.remove("hidden");
+        sliderContainer.classList.add("w-10/12");
+      }
+
+      let sliderContainerWidth = sliderContainer.clientWidth;
+      let cardWidth = sliderContainerWidth / elementsToShow;
+
+      slider.style.width = cards.length * cardWidth + "px";
+      slider.style.transition = "margin";
+      slider.style.transitionDuration = "1s";
+
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        element.style.width = cardWidth + "px";
+      }
+
+      function prev() {
+        console.log(cardWidth);
+        if (
+          +slider.style.marginLeft.slice(0, -2) !=
+          -cardWidth * (cards.length - elementsToShow)
+        )
+          slider.style.marginLeft =
+            +slider.style.marginLeft.slice(0, -2) - cardWidth + "px";
+      }
+
+      function next() {
+        if (+slider.style.marginLeft.slice(0, -2) != 0)
+          slider.style.marginLeft =
+            +slider.style.marginLeft.slice(0, -2) + cardWidth + "px";
+      }
+    </script> -->
+
+    <!-- 2-Carousel Script-->
+    <!-- <script>
+      let next1 = document.getElementById("next1");
+      let prev1 = document.getElementById("prev1");
+
+      let defaultTransform = 0;
+      function goNext() {
+        defaultTransform = defaultTransform - 398;
+        var slider = document.getElementById("slider2");
+        slider.style.transition = "all";
+        slider.style.transitionDuration = "1s";
+        if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7)
+          defaultTransform = 0;
+        slider.style.transform = "translateX(" + defaultTransform + "px)";
+      }
+      next1.addEventListener("click", goNext);
+      function goPrev() {
+        var slider = document.getElementById("slider2");
+        if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
+        else defaultTransform = defaultTransform + 398;
+        slider.style.transform = "translateX(" + defaultTransform + "px)";
+      }
+      prev1.addEventListener("click", goPrev);
+    </script> -->
+
+    <!-- test Script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script type="module">
+      var swiper = new Swiper(".mySwiper1", {
+        loop: false,
+        loopFillGroupWithBlank: false,
+        navigation: {
+          nextEl: ".swiper-button-next1",
+          prevEl: ".swiper-button-prev1",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: "1",
+            // spaceBetween: 16,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: "2",
+            // spaceBetween: 16,
+          },
+          // when window width is >= 640px
+          768: {
+            slidesPerView: "2",
+            // spaceBetween: 24,
+          },
+          1024: {
+            slidesPerView: "3",
+            // spaceBetween: 32,
+          },
+          1336: {
+            slidesPerView: "5",
+            // spaceBetween: 32,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

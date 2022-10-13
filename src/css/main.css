@@ -110,3 +110,29 @@
     -o-border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+/* ///////////////////////////// */
+
+.nav-hidden{
+  transform: translateY(-500px);
+  -webkit-transform: translateY(-500px);
+  -moz-transform: translateY(-500px);
+  -ms-transform: translateY(-500px);
+  -o-transform: translateY(-500px);
+}
+
+/* ///////////////////////////////// */
+.acardeon-back{
+    min-height: 600px;
+    background-image: url("../..//public/assets/img/back-attach.webp");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    /* filter: brightness(50%);
+    -webkit-filter: brightness(50%); */
+}
+.acardeon-section{
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+}
